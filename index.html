@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Restwaarde Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col mt-3">
+                <!-- First Section - Restwaarde Laptop Calculator -->
+                <section>
+                    <h1>Restwaarde Laptop Berekenen</h1>                
+                    <form id="calcForm">
+                      <div class="form-group">
+                        <label for="laptopType">Select Laptop Type:</label>
+                        <div class="row mt-2">
+                            <div class="col-sm-4">
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="standardLaptop" name="laptopType" value="standard">
+                                    <label class="form-check-label" for="standardLaptop">Standard Windows Laptop</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="powerLaptop" name="laptopType" value="power">
+                                    <label class="form-check-label" for="powerLaptop">Power Windows Laptop</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="macbook" name="laptopType" value="macbook">
+                                    <label class="form-check-label" for="macbook">MacBook</label>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+              
+                      <div class="form-group">
+                        <label for="LaptopPurchasePrice">Purchase Price:</label>
+                        <input type="number" class="form-control" id="LaptopPurchasePrice" required>
+                      </div>
+              
+                      <div class="form-group">
+                        <label for="LaptopPurchaseDate">Purchase Date:</label>
+                        <input type="date" class="form-control" id="LaptopPurchaseDate" required>
+                      </div>
+              
+                      <div class="form-group">
+                        <label for="LaptopTerminationDate">Termination Date:</label>
+                        <input type="date" class="form-control" id="LaptopTerminationDate" required>
+                      </div>
+                      <button type="button" class="btn btn-primary" onclick="calculateLaptopRemainingDebt()">Calculate Remaining Debt</button>          
+                    </form>
+                    <!-- <div id="LaptopResult" class="mt-3"></div> -->
+                    <p id="LaptopResult" class="mt-3">Result is here</p>
+                </section>
+            </div>            
+        </div>
+
+        <div class="row">
+
+            <div class="col">
+                <!-- Second Section - Phone Buyout Calculator -->
+                <section>
+                    <h1>Restwaarde Telefoon Berekenen</h1>
+                    <div class="form-group">
+                        <label for="phoneBudget">Budget for Phone (euros):</label>
+                        <input type="number" class="form-control" id="phoneBudget" placeholder="Enter budget">
+                    </div>
+                    <div class="form-group">
+                        <label for="budgetDate">Date when budget was defined:</label>
+                        <input type="date" class="form-control" id="budgetDate">
+                    </div>
+                    <div class="form-group">
+                        <label for="terminationDate">Termination Date:</label>
+                        <input type="date" class="form-control" id="terminationDate">
+                    </div>
+                    <button class="btn btn-primary" onclick="calculateRemainingDebt('phone')">Calculate Remaining Debt</button>
+                    <div id="phoneResult" class="result-area mt-2"></div>
+                    <div class="form-group">
+                        <label for="phoneBudgetResult"> Result: </label>
+                        <input type="number" class="form-control" id="phoneResult" placeholder="Result will be visible here.">
+                    </div>
+                </section>
+            </div>
+
+            <div class="col">
+                <!-- Third Section - CoolBlue Buyout Calculator -->
+                <section>
+                    <h1>Restwaarde CoolBlue Berekenen</h1>
+                    <div class="form-group">
+                        <label for="coolBlueBudget">Budget for CoolBlue Products (euros):</label>
+                        <input type="number" class="form-control" id="coolBlueBudget" placeholder="Enter budget">
+                    </div>
+                    <div class="form-group">
+                        <label for="coolBlueDate">Date when budget was defined:</label>
+                        <input type="date" class="form-control" id="coolBlueDate">
+                    </div>
+                    <div class="form-group">
+                        <label for="coolBlueTerminationDate">Termination Date:</label>
+                        <input type="date" class="form-control" id="coolBlueTerminationDate">
+                    </div>
+                    <button class="btn btn-primary" onclick="calculateRemainingDebt('coolBlue')">Calculate Remaining Debt</button>
+                    <div id="coolBlueResult" class="result-area mt-2"></div>
+                    <div class="form-group">
+                        <label for="CoolBlue"> Result: </label>
+                        <input type="number" class="form-control" id="phoneBudget" placeholder="Result will be visible here.">
+                    </div>
+                </section>                
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

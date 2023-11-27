@@ -1,0 +1,43 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    padding: 20px; /* Add padding to maintain spacing inside the container */
+}
+
+section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 40px; /* Increased space between sections */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for a modern look */
+    border-right: 3px solid #007bff; /* Blue border line between sections */
+    border-Left: 3px solid #007bff;
+}
+
+h1 {
+    font-size: 24px;
+    color: #343a40;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input {
+    border-radius: 4px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.result-area {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #28a745;
+}
