@@ -13,7 +13,7 @@ function calculateLaptopRemainingDebt() {
     switch (laptopType) {
       case 'standard':
         if (LaptopMonthsInUse < 48) {
-          LaptopResidualValue = (((LaptopPurchasePrice * 0.90) / 48) * (48 - LaptopMonthsInUse));
+          LaptopResidualValue = ((LaptopPurchasePrice * 0.90) / 48) * (48 - LaptopMonthsInUse);
           residualPercentage = 0.1 * LaptopPurchasePrice;
           percentage = 10;
           LaptopRemainingMonths = 48 - LaptopMonthsInUse;
@@ -28,7 +28,7 @@ function calculateLaptopRemainingDebt() {
         break;
       case 'power':
         if (LaptopMonthsInUse < 48) {
-          LaptopResidualValue = (((LaptopPurchasePrice * 0.85) / 48) * (48 - LaptopMonthsInUse));
+          LaptopResidualValue = ((LaptopPurchasePrice * 0.85) / 48) * (48 - LaptopMonthsInUse);
           residualPercentage = 0.15 * LaptopPurchasePrice;
           percentage = 15;
           LaptopRemainingMonths = 48 - LaptopMonthsInUse;
@@ -43,7 +43,7 @@ function calculateLaptopRemainingDebt() {
         break;
       case 'macbook':
         if (LaptopMonthsInUse < 60) {
-          LaptopResidualValue = (((LaptopPurchasePrice * 0.80) / 60) * (60 - LaptopMonthsInUse));
+          LaptopResidualValue = ((LaptopPurchasePrice * 0.80) / 60) * (60 - LaptopMonthsInUse);
           residualPercentage = 0.2 * LaptopPurchasePrice;
           percentage = 20;
           LaptopRemainingMonths = 60 - LaptopMonthsInUse;
