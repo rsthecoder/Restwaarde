@@ -17,13 +17,13 @@ function calculateLaptopRemainingDebt() {
           residualPercentage = 0.1 * LaptopPurchasePrice;
           percentage = 10;
           LaptopRemainingMonths = 48 - LaptopMonthsInUse;
-          LaptopPerMonthOff = LaptopPurchasePrice / 48;
+          LaptopPerMonthOff = LaptopPurchasePrice * 0.9 / 48;
         } else {
           LaptopResidualValue = 0;
           residualPercentage = 0.1 * LaptopPurchasePrice;
           percentage = 10;
           LaptopRemainingMonths = 0;
-          LaptopPerMonthOff = LaptopPurchasePrice / 48;
+          LaptopPerMonthOff = LaptopPurchasePrice * 0.9 / 48;
         }
         break;
       case 'power':
@@ -32,13 +32,13 @@ function calculateLaptopRemainingDebt() {
           residualPercentage = 0.15 * LaptopPurchasePrice;
           percentage = 15;
           LaptopRemainingMonths = 48 - LaptopMonthsInUse;
-          LaptopPerMonthOff = LaptopPurchasePrice / 48;
+          LaptopPerMonthOff = LaptopPurchasePrice * 0.85 / 48;
         } else {
           LaptopResidualValue = 0;
           residualPercentage = 0.15 * LaptopPurchasePrice;
           percentage = 15;
           LaptopRemainingMonths = 0;
-          LaptopPerMonthOff = LaptopPurchasePrice / 48;
+          LaptopPerMonthOff = LaptopPurchasePrice * 0.85 / 48;
         }
         break;
       case 'macbook':
@@ -47,13 +47,13 @@ function calculateLaptopRemainingDebt() {
           residualPercentage = 0.2 * LaptopPurchasePrice;
           percentage = 20;
           LaptopRemainingMonths = 60 - LaptopMonthsInUse;
-          LaptopPerMonthOff = LaptopPurchasePrice / 60;
+          LaptopPerMonthOff = LaptopPurchasePrice * 0.80 / 60;
         } else {
           LaptopResidualValue = 0;
           residualPercentage = 0.2 * LaptopPurchasePrice;
           percentage = 20;
           LaptopRemainingMonths = 0;
-          LaptopPerMonthOff = LaptopPurchasePrice / 60;
+          LaptopPerMonthOff = LaptopPurchasePrice * 0.80 / 60;
         }
         break;
     }
