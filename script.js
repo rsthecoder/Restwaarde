@@ -68,7 +68,7 @@ function calculateLaptopRemainingDebt() {
     <br><br> Aankoopprijs: ${LaptopPurchasePrice} euro
     <br> Gebruikt totaal: ${LaptopMonthsInUse} maanden
     <br> Resterende maanden: ${LaptopRemainingMonths} maanden
-    <br> Afgerekend per maand: ${LaptopPerMonthOff} euro`;
+    <br> Afgerekend per maand: ${LaptopPerMonthOff.toFixed(2)} euro`;
     
   }
 
