@@ -63,7 +63,7 @@ function calculateLaptopRemainingDebt() {
     const LaptopResultElement = document.getElementById('LaptopResult');
     //resultElement.innerHTML = `Purchased for ${LaptopPurchasePrice} euros, after ${monthsInUse} months of use, this laptop is ${remainingDebt.toFixed(2)} euros in total (${residualValue.toFixed(2)} euros remaining amount + ${(LaptopPurchasePrice - residualValue).toFixed(2)} euros 10% value).`;
     LaptopResultElement.innerHTML = `
-    Restwaarde Laptop is: <b>${LaptopRemainingDebt.toFixed(2)}</b> euro
+    Restwaarde Laptop is: <b>€${LaptopRemainingDebt.toFixed(2)}</b>
     <br>(${LaptopResidualValue.toFixed(2)} restant afschrijving + ${residualPercentage.toFixed(2)} euro ${percentage}% van de aanschaf)
     <br><br> Aankoopprijs: ${LaptopPurchasePrice} euro
     <br> Gebruikt totaal: ${LaptopMonthsInUse} maanden
